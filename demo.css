@@ -1,0 +1,15 @@
+/* Only the demo layout; exercise component styles are compiled into styles.css. */
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; line-height: 1.6; background: #f5f5f5; }
+.container { max-width: 1000px; margin: auto; padding: 32px 24px; }
+header { padding-bottom: 20px; }
+.eyebrow { font-size: 12px; letter-spacing: 2px; }
+h1, h2 { line-height: 1.25; }
+h1 { margin: 10px 0; }
+.card h2 { margin-top: 0; }
+.cards { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
+.button { display: inline-block; text-decoration: none; }
+code { overflow-wrap: anywhere; }
+section[id] { margin-top: 32px; }
+footer { margin-top: 40px; font-size: 14px; }
+@media (max-width: 700px) { .cards { grid-template-columns: minmax(0, 1fr); } }

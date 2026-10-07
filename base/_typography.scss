@@ -1,0 +1,11 @@
+@use "../abstracts/variables" as vars;
+
+h1 {
+  font-size: vars.$font-large;
+  color: vars.$text-color;
+}
+
+h2 {
+  font-size: vars.$font-medium;
+  color: vars.$text-color;
+}

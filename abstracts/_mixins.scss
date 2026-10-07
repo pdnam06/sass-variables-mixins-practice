@@ -1,0 +1,15 @@
+@use "variables" as vars;
+
+@mixin button-style($bg-color) {
+  background: $bg-color;
+  color: vars.$surface-color;
+  padding: vars.$padding-standard;
+  border-radius: vars.$button-radius;
+}
+
+@mixin box-style {
+  background: vars.$surface-color;
+  padding: vars.$card-padding;
+  border-radius: vars.$card-radius;
+  box-shadow: vars.$box-shadow-default;
+}

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thực hành biến và mixins Sass</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="demo.css">
+</head>
+<body>
+  <main class="container">
+    <header><p class="eyebrow">THỰC HÀNH SASS</p><h1>Biến và mixins</h1><p>Quản lý giao diện tại một nơi, tái sử dụng định dạng ở nhiều thành phần.</p></header>
+    <section class="cards">
+      <article class="card"><h2>Biến giao diện</h2><p>Màu chữ, màu nút, kích thước và khoảng cách được lưu trong <code>_variables.scss</code>.</p><p><a class="button" href="#guide">Xem hướng dẫn</a></p></article>
+      <article class="card"><h2>Mixins tái sử dụng</h2><p>Hai card dùng chung <code>box-style</code>. Hai nút dùng chung <code>button-style</code>.</p><p><a class="button" href="#structure">Xem cấu trúc</a></p></article>
+    </section>
+    <section id="guide"><h2>Thay đổi một lần</h2><p>Đổi <code>$primary-color</code> trong file biến và biên dịch lại: cả hai nút sẽ được cập nhật cùng lúc.</p><p>Chạy <code>npm run build</code> hoặc <code>npm run watch</code>, sau đó mở <code>index.html</code>.</p></section>
+    <section id="structure"><h2>Cấu trúc SCSS</h2><ul><li>abstracts: biến và mixins.</li><li>base: kích thước, màu chữ của tiêu đề.</li><li>components: buttons và cards.</li><li>main.scss: nạp các partial và tạo styles.css.</li></ul></section>
+    <footer>© 2026 · Bài thực hành Sass variables &amp; mixins</footer>
+  </main>
+</body>
+</html>
